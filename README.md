@@ -8,6 +8,5 @@ The assignment was to create a responsive webpage using HTML and CSS that is be 
 - *JavaScript*
 - *Bootstrap (bootstrap.min.css)*
 
-
 ## Link
 <https://artdesign2020.000webhostapp.com/>

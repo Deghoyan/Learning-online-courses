@@ -1,0 +1,198 @@
+
+.footer-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+}
+.footer-content {
+    width: 100%;
+    height: 400px;
+    background: #333333;
+    color: #FFFFFF;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-heading {
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    flex-flow: column;
+    align-items: center;
+}
+.footer-heading h2 {
+    font: 33px/39px "Kannada MN";
+    letter-spacing: 1.98px;
+}
+
+.footer-heading h6 {
+    font: 12px/13px "Droid Sans";
+}
+ 
+.footer-heading .footer-join {
+    font: 16px/19px "Droid Sans";
+}
+
+.footer-navigation-box {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 100%;
+    width: 412px;
+    height: 20px;
+    align-items: center;
+}
+
+.footer-navigation .nav-item {
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.footer-navigation .header-item{
+    position: relative;
+    /*opacity: 1;*/
+    font: 16px/19px "Droid Sans";
+    letter-spacing: 0.96px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-end {
+    width: 100%;
+    /*height: 30px;*/
+    background: #292929;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-end-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    width: 80%;
+}
+
+.footer-join {
+    border-top: 1px solid white;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    /* align-self: center; */
+}
+
+.footer-join .join {
+    margin-top: 10%;
+}
+
+.footer-end-left, .footer-end-right {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font: 14px/22px "Droid Sans";
+    letter-spacing: 0.42px;
+}
+
+.footer-end-left p, .footer-end-right p {
+    margin-top: 0;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 16%;
+}
+
+.link .fa{
+    background: #292929 ;
+    border-radius: 3px;
+    border: none;
+    color: white;
+}
+
+.link .fa:hover {
+    background: #BDD531
+}
+
+.footer-end-left {
+    align-self: center;
+    font:14px/22px "Droid Sans";
+    letter-spacing: 0.42px;
+}
+
+.footer-aist {
+    text-align: left;
+    font: 14px/22px "Droid Sans";
+    color: #FFC400;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .footer-content {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    .footer-end {
+    width: 100%;
+    height: 30%;
+    background: #292929;
+    color: #FFFFFF;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    }
+
+    .footer-end-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-self: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    }
+    .footer-end-left {
+    align-self: center;
+    font: 14px/22px "Droid Sans";
+    letter-spacing: 0.42px;
+    text-align: center;
+}
+
+ .footer-navigation-box {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    }
+
+    .footer-navigation .nav-item {
+    display: flex;
+    height: 20px;
+    }
+
+     .footer-links {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .footer-links {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+    }
+}

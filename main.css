@@ -1,0 +1,1607 @@
+.root-container{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 960px){
+.root-container{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+}
+
+.main-container{
+    margin-top: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 100%;
+    max-width: 100%;
+    
+}
+
+.full-section{
+   display: flex;
+    flex: 1 1 100%;
+    max-width: 100%;
+    flex-flow: row wrap;
+    justify-content: center; 
+}
+
+.main-image-wrapper{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main-bg{
+    position: relative;
+    height: calc(100vh - 80px);  
+}
+
+.main-image-wrapper.left-image {
+    left: 0;
+    right: 0;
+    background-image:url('./images/painter.jpg');
+    opacity: 0.29;
+}
+
+.main-image-wrapper.right-image {
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-image: url(./images/graffiti.jpg);
+    z-index: 2;
+    opacity: 0.83;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .main-image-wrapper.right-image{
+        display: none;
+     }
+}
+
+.description-holder {
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 100%;
+    /*padding: 0 120px;*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+     .description-holder {
+        display: flex;
+        flex: 1 1 100%;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+       
+     }
+}
+
+.main-title-box {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 100%;
+    /* margin-bottom: 151px; */
+    justify-content: center;
+    width: 315px;
+    /* height: 82px; */
+    /* top: 268px; */
+    left: 5%;
+    align-items: center;
+    position: relative;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .main-title-box {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 100%;
+        justify-content: center;
+        width: 80%;
+        align-self: center;
+        align-items: center;
+        position: relative;
+     }
+}
+
+.main-title-box h2 {
+    text-align: left;
+    font: Bold 40px/50px "Droid Sans";
+    /* letter-spacing: 0px; */
+    color: #000000;
+    text-shadow: 0px 3px 6px #00000036;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .main-title-box h2 {
+        text-align: center;
+     }
+}
+
+.button-box {
+    position: relative;
+    bottom: 25%;
+    left: 5%;
+    display: flex;
+    flex-flow: row nowrap;
+    /* margin-top: 63px; */
+    justify-content: flex-start;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+   .button-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-self: flex-start; 
+}
+ 
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+   .button-box {
+    margin-top: 15%;
+} 
+}
+.button {
+    width: 150px;
+    height: 40px;
+    background: #BDD531 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    margin-right: 5%;
+}
+
+.button:hover {
+   background-color: white;
+   color: black;
+   border: 1px solid #BDD531;
+   cursor: pointer;
+}
+
+.carousel-container{
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 100%;
+   
+}
+
+.main-carousel {
+    display: flex;
+    flex-flow: column nowrap;
+    flex:1 1 70%;
+    max-width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .main-carousel {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 70%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+}
+.carousel-heading h1{
+    text-align: left;
+    font: Bold 5vw/6vh Droid Sans;
+    letter-spacing: 1.5px;
+    color: #292929;
+}
+
+.carousel-about{
+    width: 50%;
+    text-align: left;
+    font: 1.5vw/4vh "Droid Sans";
+    color: #292929;
+    margin-top: 2%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .carousel-about {
+    width: 80%;
+    text-align: justify;
+    font:2.5vw/4vw "Droid Sans";
+    
+}
+}
+
+.button-view {
+    margin-top: 300px;
+    margin-left: -4%;
+}
+
+.carousel {
+    margin-top: 3%;
+}
+
+.carousel-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.carousel-images {
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 100%;
+    margin-left: 2%;
+}
+.content-images {
+    width: 320px;
+    height: 355px;
+    border: 1px solid;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.bicycle {
+    background-image:url('./images/bicycle.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 323px;
+    border-radius: 6px 6px 0px 0px;
+
+}
+
+.cripple {
+    background-image:url('./images/Cripple.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 323px;
+    border-radius: 6px 6px 0px 0px;
+
+}
+
+.child {
+    background-image:url('./images/child.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 323px;
+    border-radius: 6px 6px 0px 0px;
+
+}
+
+.bicycle-content{
+   display: flex;
+    flex: 1 1 100%;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%; 
+}
+
+.bicycle-headeing {
+    display: flex;
+    /* justify-content: flex-end; */
+    width: 100%;
+    /* height: 30px; */
+    text-align: left;
+    font: Bold 12px/25px "Droid Sans";
+    letter-spacing: 0.54px;
+    color: #292929;
+    padding: 3%;
+
+}
+
+.bicycle-text {
+    text-align: left;
+    font: 16px/20px "Droid Sans";
+    letter-spacing: 0.39px;
+    color: #292929;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    width: 100%;
+    
+}
+
+.bicycle-text p {
+    margin-left: 4%;
+}
+
+.bicycle-price {
+   /*height: 100%; */
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+}
+
+.autor {
+    width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.autor-logo {
+    width: 31px;
+    height: 31px;
+    background-image:url('./images/autor-logo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.autor-name {
+    display: flex;
+    align-self: center;
+    width: 75px;
+    height: 17px;
+    text-align: left;
+    font: 14px/18px "Droid Sans";
+    letter-spacing: 0.39px;
+    color: #292929;
+}
+
+
+.prices {
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+@media only screen and (min-width: 768px) and (max-width: 880px){
+  .autor {
+        width: 70%; 
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .autor-name {
+        display: flex;
+        align-self: center;
+        width: 100%;
+        /* height: 17px; */
+        text-align: left;
+        font: 12px/15px "Droid Sans";
+        letter-spacing: 0.39px;
+        color: #292929;
+        justify-content: flex-end;
+    }  
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+  .autor {
+        width: 40%; 
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .autor-name {
+        display: flex;
+        align-self: center;
+        width: 100%;
+        /* height: 17px; */
+        text-align: left;
+        font: 12px/15px "Droid Sans";
+        letter-spacing: 0.39px;
+        color: #292929;
+        justify-content: flex-end;
+    }  
+}
+
+
+.small-price {
+    display: flex;
+    align-self: flex-end;
+    width: 31px;
+    height: 21px;
+    text-align: left;
+    font: 18px/31px "Raleway";
+    letter-spacing: 0.54px;
+    color: #8B8B8B;
+}
+
+.big-price {
+  
+    text-align: left;
+    font: Bold 28px/48px "Raleway";
+    letter-spacing: 0.84px;
+    color: #D35135;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 880px){
+    .carousel-images {
+        display: flex;
+        flex: 1 1 100%;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 2%;
+        width: 30vw;
+        height: 50vh;
+    }
+
+    
+    .bicycle {
+        height: 41vh;
+    }
+
+    .bicycle-content {
+        display: flex;
+        flex: 1 1 100%;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* width: auto; */
+        height: -14px;
+    }
+
+    .bicycle-headeing h2{
+        display: flex;
+        /* justify-content: flex-end; */
+        width: 100%;
+        height: 6vh;
+        text-align: left;
+        font: Bold 3vw/3vh "Droid Sans";
+        letter-spacing: 0.54px;
+        color: #292929;
+        padding: 3%;
+    }
+
+    .bicycle-text {
+        text-align: left;
+        font: 1.5vw/3vh "Droid Sans";
+        letter-spacing: 0.39px;
+        color: #292929;
+        display: flex;
+        justify-content: flex-end;
+        align-self: flex-end;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .bicycle-price {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+
+    .big-price {
+    text-align: left;
+    font: Bold 25px/48px "Raleway";
+    letter-spacing: 0.84px;
+    color: #D35135;
+}
+
+    .small-price {
+        display: flex;
+        align-self: flex-end;
+        width: 8vw;
+        justify-content: center;
+        height: 4vh;
+        align-items: flex-start;
+        text-align: left;
+        font: 2vw/2vh "Raleway";
+        letter-spacing: 0.54px;
+        color: #8B8B8B;
+    }
+
+
+}
+
+
+.carousel-control-prev {
+    left: 67%;
+}
+.carousel {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    width: 70%;
+    height: 500px;
+    justify-content: space-around;
+}
+ 
+@media only screen and (min-width: 320px) and (max-width: 960px){
+   .carousel {
+        width: 100%;
+    }  
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 20px;
+    height: 20px;
+    background: no-repeat 50%/100% 100%;
+    align-self: flex-end;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.fa {
+    text-align: center;
+    width: 31px;
+    height: 31px;
+    color: #BDD531;
+    border: 1px solid #BDD531;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa:hover {
+    background-color: #BDD531;
+    color: white;
+}
+
+.art-design{
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 100%;
+    width: 100%;
+    margin-top: -20%;   
+}
+
+.articels {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-self: center;
+    width: 100%;
+    height: 350px;
+    /*z-index: 3;*/
+}
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+.articels {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center ;
+    align-self: center;
+    width: 100%;
+    height: 350px;
+    /* z-index: 3; */
+     }
+ }
+.articels-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-self: flex-start;
+    align-items: flex-start;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    .articels-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+}
+
+.artcont {
+    width: 50%;
+    height: 250px;
+    /*border: 1px solid;*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    .artcont {
+        width: 80%;
+        height: 250px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-self: center; 
+    } 
+
+    .art-heading h1{
+        font: Bold 5vw/6vh "Droid Sans";
+    }
+
+
+}
+
+.art-text {
+    width: 85%;
+    margin-top: 2%;
+   
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+   .art-text {
+        width: 100%;
+        margin-top: 2%;
+        font: 2.5vw/4vh "Droid Sans";
+    } 
+}
+
+
+.read-more {
+    width: 50%;
+    margin-top: 15%;
+    display: flex;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .read-more {
+    width: 80%;
+    margin-top: 18%;
+    display: flex;
+    justify-content: center;
+}
+}
+
+.body-art {
+    width: 85%;
+    height: 650px;
+    /*border: 1px solid;*/
+    display: flex;
+    flex-flow: row;
+    /*z-index: 4;*/
+    justify-content: space-between;
+    /* align-items: center; */
+    align-self: center;
+    margin-top: -20%;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+  .body-art {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .body-art {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 15%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .body-art {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 0;
+}
+}
+
+.deer-container {
+    width: 45%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .deer-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+   .deer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+}
+}
+.deer {
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.deer-image {
+    width: 200px;
+    height: 200px;
+    background-image:url('./images/deer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-right: 5px solid #BDD531;
+}
+
+.deer-heading h6{
+    text-align: left;
+    font: 18px/20px "Droid Sans";
+    letter-spacing: 0.54px;
+    color: #292929;
+    margin-top: 8%;
+    font-weight: bold;
+    }
+
+.deer-text p {
+    text-align: left;
+    font:16px/22px "Droid Sans";
+    letter-spacing: 0.48px;
+    color: #292929;
+    margin-top: 2%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .deer-heading h6{
+        width: 50%;
+    }
+
+    .deer-text p{
+        width: 50%; 
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .deer {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-self: flex-start;
+    align-items: flex-start;
+    }
+    .deer-image {
+    width: 25vw;
+    height: 25vw;
+    }
+ .deer-heading{
+        width: 60%;
+    }
+
+  .deer-heading h6 {
+    font: 3vw/4vh "Droid Sans";
+    font-weight: bold;
+    margin-top: 0;
+    }
+
+  .deer-text p{
+    font: 2.5vw/4vw "Droid Sans";
+  }
+
+}
+.painter {
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.painter-image {
+    width: 142px;
+    height: 172px;
+    background-image:url('./images/brush.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-right: 5px solid #BDD531;
+}
+
+.painter-heading h6 {
+    text-align: left;
+    font: 18px/20px "Droid Sans";
+    letter-spacing: 0.54px;
+    color: #292929;
+    margin-top: 8%;
+    font-weight: bold;
+}
+
+.painter-text p {
+    text-align: left;
+    font:16px/22px "Droid Sans";
+    letter-spacing: 0.48px;
+    color: #292929;
+    margin-top: 2%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .painter-heading h6{
+        width: 50%;
+    }
+
+    .painter-text p{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .painter {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-self: flex-start;
+    align-items: flex-start;
+    }
+    .painter-image {
+    width: 25vw;
+    height: 25vw;
+    }
+ .painter-heading{
+        width: 60%;
+    }
+
+  .painter-heading h6 {
+    font: 3vw/4vh "Droid Sans";
+    font-weight: bold;
+    margin-top: 0;
+    }
+
+  .painter-text p{
+    font: 2.5vw/4vw "Droid Sans";
+  }
+
+}
+
+.girls-container {
+    width: 45%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+    .girls-container {
+    width: 45%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .girls-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .girls-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+}
+}
+.black-girl {
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.black-girl-image {
+    width: 200px;
+    height: 200px;
+    background-image:url('./images/body-painting.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-right: 5px solid #BDD531;
+}
+
+.imgcont {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-self: self-end;
+    align-items: flex-end;
+    /* height: 200px; */
+}
+
+.black-girl-button {
+    background: initial;
+    border: none;
+    color: #BDD351;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+.black-girl-button:hover {
+    background-color: #BDD351;
+    opacity: 0.9;
+    color: white;
+    /*cursor: pointer;*/
+    cursor:  url("./images/tap.png"), pointer;
+
+}
+.black-girl-heading h6 {
+    text-align: left;
+    font: 18px/20px "Droid Sans";
+    letter-spacing: 0.54px;
+    color: #292929;
+    margin-top: 8%;
+    font-weight: bold;
+}
+
+.black-girl-text p {
+    text-align: left;
+    font:16px/22px "Droid Sans";
+    letter-spacing: 0.48px;
+    color: #292929;
+    margin-top: 2%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .black-girl-heading h6{
+        width: 50%;
+    }
+
+    .black-girl-text p{
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .black-girl {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-self: flex-start;
+        align-items: flex-start;
+    }
+    .black-girl-image {
+        width: 25vw;
+        height: 25vw;
+    }
+    
+    .black-girl-heading{
+        width: 60%;
+    }
+
+    .black-girl-heading h6 {
+        font: 3vw/4vh "Droid Sans";
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+  .black-girl-text p{
+    font: 2.5vw/4vw "Droid Sans";
+  }
+
+}
+.white-girl {
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.white-girl-image {
+    width: 200px;
+    height: 200px;
+    background-image:url('./images/composing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-right: 5px solid #BDD531;
+}
+
+.white-girl-heading h6 {
+    text-align: left;
+    font: 18px/20px "Droid Sans";
+    letter-spacing: 0.54px;
+    color: #292929;
+    margin-top: 8%;
+    font-weight: bold;
+}
+
+.white-girl-text p {
+    text-align: left;
+    font:16px/22px "Droid Sans";
+    letter-spacing: 0.48px;
+    color: #292929;
+    margin-top: 2%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .white-girl-heading h6{
+        width: 50%;
+    }
+
+    .white-girl-text p{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .white-girl {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-self: flex-start;
+        align-items: flex-start;
+    }
+    .white-girl-image {
+        width: 25vw;
+        height: 25vw;
+    }
+    
+    .white-girl-heading{
+        width: 60%;
+    }
+
+    .white-girl-heading h6 {
+        font: 3vw/4vh "Droid Sans";
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    .white-girl-text p{
+        font: 2.5vw/4vw "Droid Sans";
+  }
+
+}
+
+.asked-question {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+    .asked-question {
+        margin-top: -14%;
+    }
+}
+
+
+
+.asked-content {
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+   
+}
+
+.asked-question h2 {
+    text-align: left;
+    font: 50px/42px "Droid Sans";
+    letter-spacing: 1.5px;
+    color: #292929;
+    font-weight: bold;
+}
+
+.asked-content .table {
+
+    width: 80%;
+    margin-bottom: 1rem;
+    color: #212529;
+    margin-top: 5%;
+}
+
+.table td {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* padding: .75rem; */
+    align-self: center;
+    /* vertical-align: top; */
+    border-top: 1px solid #dee2e6;
+}
+
+.column p {
+    font: 1.3vw/2vw "Droid Sans";
+}
+.
+.asked-content .table tr:first-child td:first-child{
+    border-top: none;
+} 
+
+.asked-content .table tr:last-child td:last-child{
+    border-bottom: 1px solid #dee2e6;
+}
+@media only screen and (max-width: 768px) and (min-width: 320px){
+.column p {
+    font: 2.5vw/4vw "Droid Sans";
+}
+}
+
+.clown {
+    width: 500px;
+    height: 500px;
+    background-image:url('./images/clown.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   
+}
+
+@media only screen and (min-width: 320px) and (max-width: 960px) {
+    .asked-question {
+        margin-top: 15%;
+    }
+
+    .asked-content {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    }
+
+.asked-question h1 {
+    font: Bold 5vw/6vh Droid Sans;
+    } 
+
+    .clown {
+        display: none;
+    }  
+}
+
+.students {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 100%;
+    justify-content: baseline;
+    align-items: center;
+    width: 100%;
+    align-self: ;
+    height: 780px;
+    margin-top: 5%;
+}
+
+
+.students-heading h1 {
+    text-align: left;
+    font: Bold 5vw/6vh Droid Sans;
+    letter-spacing: 1.5px;
+    color: #292929;
+    font-weight: bold;
+}
+
+.students-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    /*border: 1px solid;*/
+     width: 100%; 
+    height: 100%;
+    margin-top: 5%;
+}
+
+.students-content-left {
+    width: 45%;
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-flow: column nowrap;
+}
+
+
+.students-content-left-top, .students-content-left-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.students-content-left-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin-top: 10%;
+}
+.students-content-right {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-flow: column nowrap;
+}
+
+.students-image-top {
+    width: 130px;
+    height: 130px;
+    background-image:url('./images/Blinders.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.students-text {
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    /* align-self: inherit; */
+    /* justify-content: flex-end; */
+}
+
+
+.students-text h4 {
+    text-align: left;
+    font: 25px/18px "Droid Sans";
+    letter-spacing: 0.75px;
+    color: #000000;
+    font-weight: bold;
+    /* margin-bottom: 6%; */
+}
+
+.students-text h6 {
+    text-align: left;
+    font: 16px/25px "Droid Sans";
+    letter-spacing: 0.48px;
+    color: #000000;
+}
+
+.students-text p {
+    text-align: left;
+    font: 16px/25px "Droid Sans";
+    letter-spacing: 0.48px;
+    margin-top: 5%;
+}
+
+.students-image-bottom {
+    width: 130px;
+    height: 130px;
+    background-image:url('./images/Blinders1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.students-image-rtop {
+    width: 130px;
+    height: 130px;
+    background-image:url('./images/Tommy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.students-image-rbottom {
+    width: 130px;
+    height: 130px;
+    background-image:url('./images/Blinders.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+/*
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .students-content{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    height: 100%;
+    }
+
+}*/
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .students {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 100%;
+        justify-content: baseline;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+    }
+    .students-content{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 10%;
+    }
+
+    .students-content-left,.students-content-right {
+    width: 100%;
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-flow: column wrap;
+    }
+
+    .students-content-left-top, .students-content-left-bottom {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row nowrap;
+    }
+
+    .students-content-left-bottom {
+        margin-top: 0;
+    }
+
+    .students-text h4 {
+        font:Bold 3vw/4vh "Droid Sans";
+    }
+
+    .students-text h6 {
+        font:Bold 2vw/2vh "Droid Sans";
+    }
+
+    .students-text p {
+        font: 2.5vw/4vw "Droid Sans";
+    }
+
+    .students-image-top,
+    .students-image-bottom,
+    .students-image-rtop,
+    .students-image-rbottom {
+        width: 25vw;
+        height: 25vw;
+    }  
+}
+
+.card-img-top {
+    height: 130px;
+}
+.courses {
+    width: 100%;
+    padding-top: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+
+.courses-container {
+    width: 85%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around; 
+}
+
+.courses-images {
+    max-width: 450px;
+    width: 100%;
+    height: 250px;
+    background-image:url('./images/bicycle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.courses-content {
+    margin-top: 2%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.courses-text {
+    width: 55%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.courses-text-points {
+    display: flex;
+    flex-flow: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.fa-star  {
+    color: #FFC400;
+    border: none;
+}
+
+.fa-fa-star {
+    display: flex;
+}
+
+.courses-text-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1260px) {
+    .courses-content {
+        margin-top: 2%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+
+    .courses-text {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+
+    .courses-text-cont {
+        margin-top: 2%;
+    }
+
+    .courses-text-points {
+        display: none;
+    }
+
+}
+
+.courses-grid-container {
+     display: grid;
+     grid-gap: 20px 20px;
+     grid-template-columns: auto auto auto auto;
+     margin-top: 5%;
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1110px) {
+    .courses-grid-container {
+         display: grid;
+         grid-gap: 20px 20px;
+         grid-template-columns:  auto auto auto;
+         margin-top: 5%;
+
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 768px) {
+    .courses-grid-container {
+         display: grid;
+         grid-gap: 20px 20px;
+         grid-template-columns: auto auto;
+         margin-top: 5%;
+     }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 650px) {
+    .courses-grid-container {
+         display: grid;
+         grid-gap: 20px 20px;
+         grid-template-columns: 1fr;
+         margin-top: 5%;
+         padding: 0 15% 0 15%;
+     }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .courses-grid-container {
+         display: grid;
+         grid-gap: 20px 20px;
+         grid-template-columns: 1fr;
+         margin-top: 5%;
+         
+     }
+}
+.owl-carousel-wrapper {
+    display: block;
+    width: 90%;
+    max-width: 90%;
+}
+
+.owl-carousel {
+    z-index: 1;
+    width: 90%;
+    max-width: 90%;
+}
+
+.owl-prev, .owl-next{
+    width: 30px;
+    height: 30px;
+    color: #BDD531 !important;
+    border: 1px solid #BDD531 !important;
+}
+
+.owl-prev:hover, .owl-next:hover{
+    color: white !important;
+    border: 1px solid #BDD531 !important;
+    background-color: #BDD531 !important;
+}
+
+.owl-nav {
+        display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}

@@ -1,0 +1,392 @@
+.large-container {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 100%;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.short-container{
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 100%;
+    max-width: 1900px;
+    justify-content: space-around;
+}
+.short-container {
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000002C;
+}
+
+.main-container{
+    position: relative;
+    top: 0px;
+ }
+
+.large-container {
+    display: flex;
+    flex: 1 1 100%;
+    width: 960px;
+ }
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px){
+    .main-container{
+        position: relative;
+        top: 0px;
+    }
+
+    .large-container {
+        display: flex;
+        flex: 1 1 100%;
+        width: 1279px;
+       
+    }
+    .short-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        width: 100%;
+       
+    } 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px){
+    .short-container {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 100%;
+    max-width: 1900px;
+    justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .short-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.header-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #FFFFFF padding-box;
+    box-shadow: 0px 3px 6px #0000002C;
+    opacity: 1;
+    width: 100%;
+    z-index: 3;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px){
+    .header-holder {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #FFFFFF padding-box;
+        box-shadow: 0px 3px 6px #0000002C;
+        opacity: 1;
+        width: 100%;
+        z-index: 3;
+     }
+}
+
+
+.header-logo {
+    /* position: absolute; */
+    /* top: 19px; */
+    /* left: 244px; */
+     width: 181px; 
+    /* height: 49px; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center;
+    align-items: flex-end;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px){
+    .header-logo {
+
+         margin-left: 5%;
+        }
+
+}
+
+.learning{
+  /*  width: 181px;*/
+    height: 32px;
+    color: #000000;
+    font: Normal 33px "SosNof_U";
+}
+
+.online{
+    width: 72px;
+    height: 13px;
+    color: #7A7A7A;
+    font: 11px "Droid Sans";
+    text-align: right;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .header-logo {
+        width: 181px;
+       display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-self: center;
+        align-items: flex-start;
+        margin-left: 4%;
+    }
+    .learning {
+        height: 32px;
+        color: #000000;
+        font: Normal 4vw/1vh "Droid Sans";
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .online {
+        width: 100%;
+        height: 13px;
+        color: #7A7A7A;
+        font: Normal 2vw/1vh "Droid Sans";
+        /* text-align: right; */
+        display: flex;
+        justify-content: flex-start;
+    }
+
+}
+.header-holder .navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px){
+
+     .header-holder .navigation {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        flex: 1 1 100%;
+        align-items: center;
+     }
+}
+
+ 
+.header-holder .navigation-box {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 100%;
+    width: 412px;
+    height: 20px;
+    align-items: center;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px){
+    .header-holder .navigation-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    flex: 1 1 100%;
+    width: 412px;
+    height: 20px;
+    align-items: center;
+}
+ 
+}
+
+@media only screen and (min-width: 320px) and (max-width: 960px){
+    .header-holder .navigation-box {
+        display: none;
+     }
+ }
+
+.header-holder .nav-item {
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.header-holder .header-item{
+    position: relative;
+    opacity: 1;
+    font: 16px "Droid Sans";
+    letter-spacing: 0.96px;
+    color: #505050;
+    text-decoration: none;
+}
+
+.header-holder .header-item::before,
+.header-holder .header-item:before {
+    content: "";
+    position: absolute;
+    right: 0;
+     bottom:-13px;
+    left:0;
+    width: 0;
+    height: 3px;
+    background-color: #BDD531;
+    transition: 0.2s ease;
+}
+
+.nav-item .header-item:hover::before,
+.nav-item .header-item:hover:before  {
+    width: 100%;
+
+}
+
+.nav-item .header-item:hover {
+    transition: 0.2s ease;
+    
+}
+.session-button {
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    font-size: 18px;
+    line-height: 1;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px){
+    .session-button {
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    font-size: 18px;
+    line-height: 1;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 960px){
+    .session-button{
+        display: none;
+    }
+}
+
+.signin-button, .signup-button{
+    padding:  30px 38px;
+    width: 142px;
+    height: 80px;
+    margin-left: 22px;
+    border: none;
+    outline: none;
+}
+
+
+
+.session-button .signin-button:hover {
+   background-color: white;
+   color: #BDD531;
+   border: 1px solid #BDD531;
+   cursor: pointer;
+}
+
+.session-button .signup-button:hover{
+    background-color:white;
+    color:  #02BFDB;
+    border: 1px solid #02BFDB;
+   
+
+}
+.session-button:last-child {
+    margin-right: 0;
+}
+
+.session-button .signup-button {
+    background-color: #02BFDB;
+}
+
+ .session-button .signin-button {
+    background-color: #BDD531;
+}
+
+
+.btn-group{
+    display: none !important;
+    background-color: white;
+    font: 16px "Droid Sans";
+    letter-spacing: 0.96px;
+    color: #505050;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 960px){
+    .btn-group {
+        display: block !important ;
+        margin-right: 10px;
+     }
+
+    .btn-secondary {
+        color: #505050 !important;
+        background-color: white !important;
+        border: none !important;
+     }
+
+    .btn-secondary:hover {
+        border:none ;
+     }
+
+    .btn-group >.btn {
+
+        font-size: 1.5em !important;
+     }
+
+    .signin-button, .signup-button {
+        padding: 11px 40px;
+        width: 143px;
+        height: 41px;
+        margin: 0 20px 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+
+     }
+
+    .dropdown-menu .signup-button {
+        background-color: #02BFDB;
+    }
+    
+    .dropdown-menu .signin-button {
+        background-color: #BDD531;
+    }
+
+    .session-button {
+        display: none !important;
+    }
+
+    .session-button .signin-button:hover {
+        background-color: white;
+        color: #BDD531;
+        border: 1px solid #BDD531;
+        cursor: pointer;
+        border-radius: 5px;
+        outline: none;
+    }
+         
+    .session-button .signup-button:hover{
+        border-radius: 5px;
+        outline: none;
+        background-color:white;
+        color:  #02BFDB;
+        border: 1px solid #02BFDB; 
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .btn-group >.btn {
+        font: Normal 4vw/1vh "Droid Sans" !important;
+     }
+}
